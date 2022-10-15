@@ -1,0 +1,5 @@
+<p>parent works!</p>
+<button (click)="changeName()">change name</button>
+<button (click)="changeAge()">change ref age</button>
+<input type="text" [value]="address" (change)="updateAddress($event)" />
+<app-child [primitiveValue]="name" [ref]="ageRef"></app-child>
