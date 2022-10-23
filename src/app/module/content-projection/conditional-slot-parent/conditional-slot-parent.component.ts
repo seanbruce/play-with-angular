@@ -1,5 +1,11 @@
 import { AppConditionalSlotDirective } from './../app-conditional-slot.directive';
-import { Component, ContentChild, OnInit } from '@angular/core';
+import {
+  Component,
+  ContentChild,
+  Input,
+  OnInit,
+  TemplateRef,
+} from '@angular/core';
 
 @Component({
   selector: 'app-conditional-slot-parent',
