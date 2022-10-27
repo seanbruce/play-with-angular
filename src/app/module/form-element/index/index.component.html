@@ -1,0 +1,19 @@
+<p>bind input event</p>
+<input
+  #input1Ref
+  [value]="inputValue1"
+  (input)="updateInputValue1($event)"
+/><button (click)="resetInputValue1(input1Ref)">reset</button>
+<p>inputValue1: {{ inputValue1 }}</p>
+<hr />
+<p>two way binding</p>
+<input [(ngModel)]="inputValue2.value" /><button (click)="resetInputValue2()">
+  reset
+</button>
+<p>inputValue2: {{ inputValue2.value }}</p>
+<hr />
+<p>reactive form</p>
+<input [formControl]="input3FormControl" /><button (click)="resetInputValue3()">
+  reset
+</button>
+<p>inputValue3: {{ input3FormControl.value }}</p>

@@ -1,15 +1,1 @@
-<button (click)="toggleShowComponent()">
-  {{ showComponent ? "隐藏组件" : "显示组件" }}
-</button>
-<button (click)="increaseCount()">
-  递增父组件计数器 - {{ countFromParent }}
-</button>
-
-<app-child
-  *ngIf="showComponent"
-  [countFromParent]="countFromParent"
-></app-child>
-
-<app-parent-child-communication></app-parent-child-communication>
-<br />
-<app-content-projection></app-content-projection>
+<app-form-element></app-form-element>

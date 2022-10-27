@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ChildComponent } from './components/child/child.component';
 import { ParentChildCommunicationModule } from './module/parent-child-communication/parent-child-communication.module';
 import { ContentProjectionModule } from './module/content-projection/content-projection.module';
+import { FormElementModule } from './module/form-element/form-element.module';
 
 @NgModule({
   declarations: [AppComponent, ChildComponent],
@@ -14,6 +15,7 @@ import { ContentProjectionModule } from './module/content-projection/content-pro
     AppRoutingModule,
     ParentChildCommunicationModule,
     ContentProjectionModule,
+    FormElementModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
