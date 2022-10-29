@@ -1,0 +1,6 @@
+<p>fancy-list works!</p>
+<div *ngFor="let name of list">
+  <ng-container
+    *ngTemplateOutlet="content.templateRef; context: { $implicit: name }"
+  ></ng-container>
+</div>

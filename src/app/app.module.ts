@@ -7,6 +7,7 @@ import { ChildComponent } from './components/child/child.component';
 import { ParentChildCommunicationModule } from './module/parent-child-communication/parent-child-communication.module';
 import { ContentProjectionModule } from './module/content-projection/content-projection.module';
 import { FormElementModule } from './module/form-element/form-element.module';
+import { FancyListModule } from './module/fancy-list/fancy-list.module';
 
 @NgModule({
   declarations: [AppComponent, ChildComponent],
@@ -16,6 +17,7 @@ import { FormElementModule } from './module/form-element/form-element.module';
     ParentChildCommunicationModule,
     ContentProjectionModule,
     FormElementModule,
+    FancyListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

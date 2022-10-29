@@ -1,5 +1,8 @@
 <p>conditional-slot-parent works!</p>
 <button (click)="toggleVisibility()">toggle visibility</button>
-<div *ngIf="expanded">
-  <ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
-</div>
+<ng-container *ngIf="expanded">
+  <ng-container
+    [ngTemplateOutlet]="content.templateRef"
+    *ngFor="let item of [1, 2]"
+  ></ng-container>
+</ng-container>
